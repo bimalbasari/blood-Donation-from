@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Form</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+
+    <form >
+
+        <h1>User Record List</h1>
+
+        <!-- Userinput fild -->
+        <label>User name</label>
+        <input type="text" name="username" id="username" required placeholder="Fname Lname">
+
+        <!-- User email input fild -->
+        <label>Email address</label>
+        <input type="email" name="email" id="email" required placeholder="abc@abc.abc">
+
+        <!--  User blood group   -->
+        <label>Select your blood group</label>
+        <select id="group" name="group" required>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+
+        <!-- User adress  input fild-->
+        <label>Enter your address</label>
+        <textarea type="text" name="addres" id="addres" required></textarea>
+
+        <!-- User Phone Number -->
+        <label>Enter your phone number</label>
+        <input type="tel" name="phone" id="phone" required placeholder="1234567890">
+
+        <!-- User  text input fild -->
+        <label>Any other details regarding your medical health</label>
+        <textarea type="text" name="details" id="details"></textarea>
+
+        <!-- Submit button -->
+        <button type="submit" id="submit" onclick="validate()" >Submit</button>
+
+    </form>
+    <script type="text/javascript" src="./form.js"></script>
+</body>
+
+</html>
